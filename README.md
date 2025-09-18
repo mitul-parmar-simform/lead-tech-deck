@@ -1,4 +1,4 @@
-# 1. Core Foundation
+# Core Foundation
 
 ### React / react-dom
 
