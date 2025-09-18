@@ -897,7 +897,7 @@ function Model(){ const { scene } = useGLTF('/models/sku-123.glb'); return <prim
 export default function WidgetModal({ open }: { open: boolean }) {
   if (!open) return null
   return (
-    <div id="obo-modal" role="dialog" aria-modal className="fixed inset-0 grid place-items-center bg-black/50">
+    <div id="example-modal" role="dialog" aria-modal className="fixed inset-0 grid place-items-center bg-black/50">
       <div className="w-[90vw] max-w-[720px] h-[60vh] rounded-2xl overflow-hidden bg-white">
         <Canvas camera={{ position: [2, 1.5, 3], fov: 45 }}>
           <ambientLight intensity={0.5} />
@@ -940,7 +940,7 @@ export default function WidgetModal({ open }: { open: boolean }) {
 ```ts
 // content-script.tsx
 const host = document.createElement('div')
-host.id = 'obo-3d-root'
+host.id = 'example-3d-root'
 const shadow = host.attachShadow({ mode: 'open' })
 document.body.appendChild(host)
 const root = createRoot(shadow) // React 18 root
