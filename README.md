@@ -1141,11 +1141,19 @@ app/
 
 ```mermaid
 flowchart TB
-  sources[(CMS / MD / REST)] --> gatsbyNode[createSchemaCustomization]
-  gatsbyNode --> graphql[GraphQL data layer]
-  graphql --> build[SSG Build]
-  build --> public[/public (HTML, assets)/]
-  public --> CDN
+  sources[(CMS / MD / REST)];
+  gatsbyNode[createSchemaCustomization];
+  graphql[GraphQL data layer];
+  build[SSG Build];
+  publicDir[public (HTML, assets)];
+  CDN[CDN];
+
+  sources --> gatsbyNode;
+  gatsbyNode --> graphql;
+  graphql --> build;
+  build --> publicDir;
+  publicDir --> CDN;
+
 
 ```
 
