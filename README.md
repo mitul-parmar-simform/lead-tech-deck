@@ -1041,8 +1041,8 @@ src/
 ```mermaid
 flowchart LR
   A[Route change] --> B[Query client (cache?)]
-  B -->|HIT| C[Render atoms/molecules]
-  B -->|MISS| D[Fetch via shared/api]
+  B --> | HIT | C[Render atoms/molecules]
+  B --> | MISS | D[Fetch via shared/api]
   D --> E[Normalize → entities]
   E --> F[Update Zustand/RTK Query]
   F --> C
