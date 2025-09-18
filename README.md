@@ -314,9 +314,6 @@ const Btn = styled.button`padding:10px; border-radius:8px;`
 **Description:** Icon libraries for consistent vector icons.
 **Use cases:** Buttons, menus, status indicators.
 
-Perfect 🙌 let’s continue the **paragraph-level guide**.
-We already covered **Core, Data, State, Forms, UI**. Now we’ll move into **Charts, Editors, Dates, Auth, File handling, Notifications, Testing, Utilities**.
-
 ---
 
 # Charts, Maps & Visualization
