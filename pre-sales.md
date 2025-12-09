@@ -1,5 +1,3 @@
----
-
 # **Technical Estimation Guidelines for React.js & Node.js Projects**
 
 This document standardizes the estimation process for projects involving **React.js (Frontend)** and **Node.js (Backend)** using **Ideal Hours (IH)**.
